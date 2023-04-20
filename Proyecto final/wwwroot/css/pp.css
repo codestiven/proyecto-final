@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9e9e9;
+}
+
+.titulo {
+    margin: auto;
+    text-align: center;
+}
+
+    .titulo h1 {
+        margin: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+.row {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    border: 0.05px solid #00000034;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+    .row .pregunta {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    .row .respuestas {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        /* Alinea los elementos horizontalmente */
+        justify-content: center;
+        padding: 20px;
+    }
+
+        .row .respuestas label {
+            font-size: 20px;
+            margin: 20px;
+            display: flex;
+            align-items: start;
+            /* Alinea los elementos horizontalmente */
+            justify-content: start;
+        }
+
+            .row .respuestas label input {
+                margin-right: 14px;
+                width: 23px;
+                height: 23px;
+            }
+
+
+
+
+.button {
+    margin: auto;
+    width: 20%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    transform: translate(600px,0px);
+}
+
+.button {
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    text-transform: uppercase;
+    width: 20%;
+    height: 50px;
+    border-radius: 25px;
+    background: #4158d0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    margin: 20px;
+}
+
+    .button:hover {
+        background: #1fadff;
+    }
+
+    .button:active {
+        background: #111111;
+    }

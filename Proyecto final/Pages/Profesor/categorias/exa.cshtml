@@ -1,0 +1,65 @@
+﻿@page
+@model Proyecto_final.Pages.Profesor.categorias.exaModel
+@{
+    ViewData["Title"] = "crear un profesor";
+
+}
+
+<div class="container">
+    <div>
+        <div>
+            <div class="col-8 offset-2">
+
+                <div class="text-info"> crear un nuevo examen </div>
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label  class="form-label">pregunta</label>
+                        <input asp-for="examenes.Nombre" class="form-control" placeholder="nombre" />
+                        <span asp-validation-for="examenes.Nombre"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label  class="form-label">respuesta 1</label>
+                        <input asp-for="examenes.pregunta1" class="form-control" placeholder="correo" />
+                        <span asp-validation-for="examenes.pregunta1"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">respuesta 2</label>
+                        <input asp-for="examenes.pregunta2" class="form-control" placeholder="contrase;a" />
+                        <span asp-validation-for="examenes.pregunta2"></span>
+                    </div>
+
+                             <div class="mb-3">
+                        <label class="form-label">respuesta 3</label>
+                        <input asp-for="examenes.pregunta3" class="form-control" placeholder="contrase;a" />
+                        <span asp-validation-for="examenes.pregunta3"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">codigo de examen</label>
+                        <input asp-for="examenes.codigo" class="form-control" placeholder="contrase;a" />
+                        <span asp-validation-for="examenes.pregunta3"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"> Crear </button>
+
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <a asp-page="Index"></a>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+}
+

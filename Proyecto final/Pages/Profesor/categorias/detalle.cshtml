@@ -1,0 +1,35 @@
+﻿@page
+@model proyecto_agenda.Pages.categorias.detalleModel
+@{
+    ViewData["Title"] = "categoria un profesor";
+}
+
+
+<div class="container">
+    <div>
+        <div>
+            <div class="col-8 offset-2">
+
+                <div class="text-info"> detalle de @Html.DisplayNameFor(m => m.profesores.Id) </div>
+
+
+                <ul class="list-group">
+                    <li class="list-group-item">  @Html.DisplayFor(m => m.profesores.Id) </li>
+                    <li class="list-group-item">  @Html.DisplayFor(m => m.profesores.Nombre) </li>
+                    <li class="list-group-item">  @Html.DisplayFor(m => m.profesores.contraseña) </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <a asp-page="Index"></a>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+}

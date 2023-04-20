@@ -1,0 +1,52 @@
+﻿@page
+@model proyecto_agenda.Pages.categorias.crearModel
+@{
+    ViewData["Title"] = "crear un estudiante";
+
+}     <button type="submit" class="btn btn-primary">   crear </button>
+
+<div class="container">
+    <div>
+        <div>
+            <div class="col-8 offset-2">
+
+                <div class="text-info"> crear una nueva profesor </div>
+
+                <form method="post" >
+                    <div class="mb-3">
+                        <label asp-for="profesores.Nombre" class="form-label"></label>
+                        <input asp-for="profesores.Nombre" class="form-control" placeholder="nombre" />
+                        <span asp-validation-for="profesores.Nombre"></span>
+                    </div>
+
+                        <div class="mb-3">
+                        <label asp-for="profesores.Correo" class="form-label"></label>
+                        <input asp-for="profesores.Correo" class="form-control" placeholder="correo" />
+                        <span asp-validation-for="profesores.Correo"></span>
+                    </div>
+
+                                            <div class="mb-3">
+                        <label asp-for="profesores.contraseña" class="form-label"></label>
+                        <input asp-for="profesores.contraseña" class="form-control" placeholder="contrase;a" />
+                        <span asp-validation-for="profesores.Correo"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">   crear </button>
+
+
+                </form>
+            
+            </div>
+        </div>
+
+        <div class="col-6">
+            <a asp-page="Index"></a>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <partial name="_ValidationScriptsPartial" />
+}

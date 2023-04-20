@@ -1,0 +1,51 @@
+﻿@page
+@model Proyecto_final.Pages.Estudiante.registroModel
+@{
+    Layout = "";
+}
+
+<div class="container">
+    <div>
+        <div>
+            <div class="col-8 offset-2">
+
+                <div class="text-info"> crear una nueva profesor </div>
+
+                <form method="post">
+                    <div class="mb-3">
+                        <label asp-for="profesor.Nombre" class="form-label"></label>
+                        <input asp-for="profesor.Nombre" class="form-control" placeholder="nombre" />
+                        <span asp-validation-for="profesor.Nombre"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="profesor.Correo" class="form-label"></label>
+                        <input asp-for="profesor.Correo" class="form-control" placeholder="correo" />
+                        <span asp-validation-for="profesor.Correo"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="profesor.contraseña" class="form-label"></label>
+                        <input asp-for="profesor.contraseña" class="form-control" placeholder="contrase;a" />
+                        <span asp-validation-for="profesor.contraseña"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary"> Crear </button>
+
+
+                </form>
+
+            </div>
+        </div>
+
+        <div class="col-6">
+            <a asp-page="Index"></a>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts
+    {
+    <partial name="_ValidationScriptsPartial" />
+}

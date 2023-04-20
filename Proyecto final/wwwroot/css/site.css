@@ -1,0 +1,170 @@
+
+a{
+    text-decoration:none;
+}
+
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+
+/*inicio*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.body_inicio {
+    background-image: url("/imagenes/fondo_inicio.jpg");
+    background-size: 100%;
+}
+
+
+
+.contenido {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+    .contenido .algo {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .contenido .algo h1 {
+            font-size: 80px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+        }
+
+        .contenido .algo a img {
+            width: 60%;
+
+        }
+
+        .contenido .algo a {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px;
+            border-radius: 30px;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            padding: 15px;
+            background-color: #e6e6e6;
+            border: none;
+            text-decoration: none;
+            color: #252525;
+
+        }
+
+
+
+        .contenido .algo a {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px;
+            border-radius: 30px;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            padding: 10px;
+            background-color: #cecece75;
+            border: none;
+            transition: 250ms;
+        }
+
+            .contenido .algo a:hover {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 80px;
+                border-radius: 30px;
+                font-size: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                padding: 10px;
+                background-color: #ffffff;
+                border: none;
+                transform: scale(130%,130%);
+                font-weight: 500;
+            }
+
+
+            .contenido .algo a:hover {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 80px;
+                border-radius: 30px;
+                font-size: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                padding: 10px;
+                background-color: #ffffff;
+                border: none;
+                transform: scale(130%, 130%);
+                font-weight: 500;
+            }
+
+            .contenido .algo a:hover {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 80px;
+                border-radius: 30px;
+                font-size: 30px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+                padding: 10px;
+                background-color: #ffffff;
+                border: none;
+                transform: scale(130%, 130%);
+                font-weight: 500;
+            }
+
+            .contenido .algo a:active {
+                background-color: #7ce0ff;
+                color: #fff;
+            }
+
+        .contenido .algo .botones {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
